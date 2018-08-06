@@ -6,6 +6,7 @@ node {
 
               stage("Install Tomcat") {
                 sh "/usr/bin/sudo -n yum install -y tomcat"
+                sh "/usr/bin/sudo -n yum install -y screen"
               }
             
               stage("starting server") {
